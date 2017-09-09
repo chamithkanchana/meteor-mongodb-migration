@@ -13,6 +13,6 @@ Migrations.add({
 	down: function() {
 		/*code to migrate down to version 0} */
 
-		AssociatedGyms.update({}, {$unset: {todoCount: true}});
+		TodoList.update({}, {$unset: {todoCount: true}});
 	}
 });
